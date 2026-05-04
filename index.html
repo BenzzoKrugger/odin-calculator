@@ -1,12 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <script src="script.js" defer></script>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/styles/output.css" />
+  </head>
+
+  <body class="flex justify-center items-center min-h-screen bg-gray-200">
+
+    <div class="bg-gray-500 w-90 h-160 rounded-3xl flex flex-col p-6 gap-4 shadow-[8px_8px_0]">
+
+      <!-- Display -->
+      <div class="bg-white rounded-xl p-4 flex justify-end items-end shadow-[-2px_-2px_0]">
+        <span class="text-4xl font-extrabold">56</span>
+      </div>
+
+      <!-- Buttons container -->
+      <div class="flex flex-col flex-1 gap-3">
+
+        <!-- Row 1 -->
+        <div class="flex gap-3 flex-1">
+          <button class="flex-1 rounded-xl bg-blue-300 text-3xl font-bold shadow-[2px_2px_0]">C</button>
+          <button class="flex-1 rounded-xl bg-blue-300 text-3xl font-bold shadow-[2px_2px_0]">Del</button>
+          <button class="flex-1 rounded-xl bg-blue-300 text-3xl font-bold shadow-[2px_2px_0]">+/-</button>
+          <button class="flex-1 rounded-xl bg-green-500 text-3xl font-bold shadow-[2px_2px_0]">/</button>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="flex gap-3 flex-1">
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">7</button>
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">8</button>
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">9</button>
+          <button class="flex-1 rounded-xl bg-green-500 text-3xl font-bold shadow-[2px_2px_0]">*</button>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="flex gap-3 flex-1">
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">4</button>
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">5</button>
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">6</button>
+          <button class="flex-1 rounded-xl bg-green-500 text-3xl font-bold shadow-[2px_2px_0]">-</button>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="flex gap-3 flex-1">
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">1</button>
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">2</button>
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">3</button>
+          <button class="flex-1 rounded-xl bg-green-500 text-3xl font-bold shadow-[2px_2px_0]">+</button>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="flex gap-3 flex-1">
+          <button class="flex-2 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">0</button>
+          <button class="flex-1 rounded-xl bg-blue-600 text-3xl font-bold shadow-[2px_2px_0]">,</button>
+          <button class="flex-1 rounded-xl bg-blue-300 text-3xl font-bold shadow-[2px_2px_0]">=</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
 </html>
